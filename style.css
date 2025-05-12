@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: "Comic Relief", system-ui;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: wheat;
+    padding: 10px;
+}
+nav a{
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+nav a:hover{
+    color: red;
+}
+h2{
+    align-items: center;
+    color: rgb(142, 165, 42);
+}
