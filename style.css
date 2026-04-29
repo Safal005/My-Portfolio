@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
 body{
     font-family: "Comic Relief", system-ui;
 }
@@ -22,4 +22,13 @@ nav a:hover{
 h2{
     align-items: center;
     color: rgb(142, 165, 42);
+}
+#footer{
+    text-align: center;
+    background-color: wheat;
+    color: red;
+}
+#name{
+    display: flex;
+    justify-content:left;
 }
