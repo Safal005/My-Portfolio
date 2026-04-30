@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: rgb(249, 250, 252);
@@ -125,6 +124,32 @@ nav a:hover{
 .btn-secondary:hover{
     background-color: black;
     color: white;
+}
+
+section:not(#home):not(#contacts){
+    max-width: 900px;
+    min-height: 80vh;
+    background-color: white;
+    margin: 60px auto;
+    padding: 60px 40px ;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+section h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+
+}
+section h2::after{
+    content: '' ;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #002fff;
+    margin-top: 5px;
+    border-radius: 2px;
 }
 
 #footer{
