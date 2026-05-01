@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{ 
+    scroll-behavior: smooth;
+}
 body{
     font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: rgb(249, 250, 252);
@@ -15,7 +18,6 @@ body{
     justify-content:center;
     align-items: center;
     height: 0;
-    border-radius: 250px;
     margin: 10px auto;
     position:sticky;
     z-index: 1000;
@@ -27,7 +29,6 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     height: 60px;
-    width: 600px;
     margin-top: 3px;
     border: 1px solid  rgb(205, 203, 203);
     border-radius: 30px;
@@ -65,12 +66,12 @@ nav a:hover{
     width: 300px;
     border-radius: 20px;
     object-fit: cover;
-    box-shadow: 10px 10px 5px rgb(182, 182, 227);
+    box-shadow: 10px 10px 2px rgb(182, 182, 227);
     transition: 0.3s ease ;
 }
 #home-image img:hover{
     transform: translate(-5px,-5px);
-    box-shadow: 15px 15px 10px rgb(176, 176, 228);
+    box-shadow: 15px 15px 2px rgb(176, 176, 228);
 }
 
 .home-content h1{
@@ -134,7 +135,9 @@ section:not(#home):not(#contacts){
     padding: 60px 40px ;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    scroll-margin-top: 100px;
 }
+
 section h2{
     font-size: 32px;
     margin-bottom: 20px;
@@ -151,6 +154,38 @@ section h2::after{
     margin-top: 5px;
     border-radius: 2px;
 }
+section h3{
+    margin:30px 0 20px 0;
+}
+.skills{
+    display: grid;
+    gap:15px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    margin-top: 30px;
+}
+.skill-card{
+
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f4f3f1;
+    transition: 0.3s ease;
+}
+.skill-card:hover{
+    background-color: #e9e8e6;
+    transform: scale(1.05);
+}
+.skill-card i{
+    display: block;
+    font-size: 24px;
+    color: #002fff;
+    margin-bottom: 5px;
+}
+
+
+
+
+
 
 #footer{
     text-align: center;
