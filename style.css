@@ -115,7 +115,7 @@ nav a:hover{
 }
 
 .home-content h1{
-    font-size: 75px;
+    font-size: 70px;
     line-height: 1.1;
     margin-bottom: 10px;
 }
@@ -289,14 +289,48 @@ section h3{
     border-radius: 2px;
 }
 
-
-#footer{
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    padding: 60px 0;
     text-align: center;
-    background-color:  rgb(244, 243, 241);
-    
+}
+.contact-container h2{
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.contact-container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-#name{
+.social-icons{
+    color: white;
+    font-size: 25px;
     display: flex;
-    justify-content:left;
+    align-items: center;
+    gap: 15px;
+}
+.social-icons a{
+    color: white;
+    transition:0.3s ease;
+}
+.social-icons a:hover{
+    transform:scale(1.05);
+    color: #002fff;
+}
+.social-icons::before,
+.social-icons::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+
 }
