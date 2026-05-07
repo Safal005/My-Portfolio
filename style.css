@@ -110,7 +110,8 @@ nav a:hover{
 }
 #home-image img {
     height: 350px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 10px 10px 2px rgb(182, 182, 227);
@@ -420,9 +421,19 @@ section h3{
     }
 
     #home {
-        gap: 40px;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 60px;
     }
+
+    #home-image img {
+        width: 250px;
+        height: 300px;
+    }
+
     .home-content h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
