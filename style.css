@@ -437,3 +437,13 @@ section h3{
         font-size: 40px;
     }
 }
+    #about {
+        margin: 40px 20px;
+        padding: 40px 20px;
+    }
+
+    #about h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
