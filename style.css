@@ -29,12 +29,8 @@ header{
     top: 35px;
     z-index: 1000;
     width: 100%;
-    transition: transform 0.4s ease, opacity 0.4s ease; 
 }
-.header-hidden {
-    transform: translateY(-110%); 
-    opacity: 0;
-}
+
 .header-container{
     max-width: 1050px;
     display: flex;
@@ -44,7 +40,8 @@ header{
     margin: 0 auto;
 }
 #navbar-container{
-}
+    }
+    
 .logo img {
     height: 30px;
     width: 50px;
@@ -433,7 +430,13 @@ section h3{
     .mobile-menu-icon {
         display: block;
     }
-
+    header{
+    transition: transform 0.4s ease, opacity 0.4s ease; 
+}
+    .header-hidden {
+    transform: translateY(-110%); 
+    opacity: 0;
+}
     .header-container {
         justify-content: space-between;
         padding: 0 30px;
