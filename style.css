@@ -29,6 +29,11 @@ header{
     top: 35px;
     z-index: 1000;
     width: 100%;
+    transition: transform 0.4s ease, opacity 0.4s ease; 
+}
+.header-hidden {
+    transform: translateY(-110%); 
+    opacity: 0;
 }
 .header-container{
     max-width: 1050px;
@@ -419,8 +424,6 @@ section h3{
     border-radius: 8px;
     border-bottom: none !important;
 }
-
-
 
 @media (max-width: 717px) {
     #navbar-contents, .cv-wrapper {
