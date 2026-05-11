@@ -31,6 +31,7 @@
         lastScrollY=window.scrollY;
     })
 
+    
     if (localStorage.getItem('theme') === 'dark') {
         document.body.setAttribute('data-theme', 'dark');
         themeIcon.classList.replace('fa-sun', 'fa-moon');
