@@ -1,9 +1,12 @@
     const menuIcon = document.querySelector('.mobile-menu-icon');
     const closeIcon = document.querySelector('.close-icon');
     const mobileMenu = document.getElementById('mobile-menu-overlay');
-    const navLinks = document.querySelectorAll('.mobile-nav-links a')
-    const header=document.querySelector('header');
-    
+    const navLinks = document.querySelectorAll('.mobile-nav-links a');
+    const header = document.querySelector('header');
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');  
+
+
     menuIcon.addEventListener('click', () => {
         mobileMenu.classList.add('active');
     });
@@ -27,3 +30,25 @@
         }
         lastScrollY=window.scrollY;
     })
+
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.setAttribute('data-theme', 'dark');
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+    } else {
+        themeIcon.classList.add('fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        if (document.body.getAttribute('data-theme') === 'dark') {
+            document.body.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+            document.body.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+        }
+    });
+
+
+
