@@ -1,6 +1,6 @@
     const menuIcon = document.querySelector('.mobile-menu-icon');
     const closeIcon = document.querySelector('.close-icon');
-    const mobileMenu = document.getElementById('mobile-menu-overlay');
+    const mobileMenu = document.querySelector('.mobile-menu');
     const navLinks = document.querySelectorAll('.mobile-nav-links a');
     const header = document.querySelector('header');
     const themeToggle = document.getElementById('theme-toggle');

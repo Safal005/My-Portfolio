@@ -1,4 +1,4 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+
 
 * {
     margin: 0;
@@ -218,7 +218,6 @@ section h3{
     transition: 0.3s ease;
 }
 .skill-card:hover{
-    background-color: var(--bg-skill);
     transform: scale(1.05);
 }
 .skill-card i{
@@ -235,7 +234,7 @@ section h3{
     width: 100%;
     gap:50px;
     display: flex;
-
+    flex-direction: row;
 }
 .project-container{
     background-color: #f4f3f1;
@@ -467,11 +466,11 @@ section h3{
     }
     header{
     transition: transform 0.4s ease, opacity 0.4s ease; 
-}
+    }
     .header-hidden {
     transform: translateY(-110%); 
     opacity: 0;
-}
+    }
     .header-container {
         justify-content: space-between;
         padding: 0 30px;
